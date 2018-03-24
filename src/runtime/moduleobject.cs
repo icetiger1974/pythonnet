@@ -397,7 +397,7 @@ namespace Python.Runtime
             }
             if (assembly == null)
             {
-                throw new FileNotFoundException($"Unable to find assembly '{name}'.");
+                throw new Exception($"Unable to add assembly '{name}'.");
             }
 
             return assembly;
